@@ -1,0 +1,7 @@
+*.txt
+*.md
+*.pyc
+__pycache__
+.DS_Store
+settings.json
+.release/
