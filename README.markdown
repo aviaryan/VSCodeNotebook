@@ -32,4 +32,4 @@ The result is this project, a wrapper/idea that converts my text editor, VSCode,
 
 ## Documentation :yum:
 
-Find the docs in the [sublime_notebook/docs](sublime_notebook/docs/README.markdown) folder.
+Read [DOCUMENTATION.markdown](DOCUMENTATION.markdown).
