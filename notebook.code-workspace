@@ -15,7 +15,7 @@
 			"**/.release": true,
 			// release settings
 			// uncommented in the release zip
-			// "sublime_notebook/*.py": true,
+			// "vscode_notebook/*.py": true,
 		}
 	}
 }

@@ -3,7 +3,7 @@ from sys import exit
 from .cryptlib import get_file_list, encode, update_file, get_key, decode
 from .message import print_info, print_err
 from .settings import Settings
-from sublime_notebook import SETTINGS_PATH
+from vscode_notebook import SETTINGS_PATH
 
 
 def get_first_time_key():

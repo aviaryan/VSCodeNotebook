@@ -5,7 +5,7 @@
 **v1.0**
 
 VSCode Notebook is an attempt to use VSCode as a complete note taking application. 
-This is just a VS Code port of the popular [SublimeNotebook](https://github.com/aviaryan/SublimeNotebook) project.
+This is a VSCode port of the popular [SublimeNotebook](https://github.com/aviaryan/SublimeNotebook) project.
 
 
 ## Why did you build this? :thinking:
@@ -17,7 +17,7 @@ I have been note-taking for as long as I started using computers. I use notes mo
 
 Because of these reasons, I had to lose my notes a number of times and was forced to start from scratch. This was frustrating, and finally, I decided to do something about it.
 
-The result is this project, a wrapper/idea that converts my a text editor, like VSCode, to a feature-rich note-taking tool. Sure it might not be as polished as all those premium note-taking tools, but it works and that too in the way I want it to. And if for some reason I get tired of using VSCode, I can always create a port for another text editor. It will be easy because the dependency on the text editor is very minimal here, not to mention the notes are nothing but plain text files. 😉
+The result is this project, a wrapper/idea that converts my text editor, VSCode, to a feature-rich note-taking tool. Sure it might not be as polished as all those premium note-taking tools, but it works and that too in the way I want it to. And if for some reason I get tired of using VSCode, I can always create a port for another text editor. It will be easy because the dependency on the text editor is very minimal here, not to mention the notes are nothing but plain text files. 😉
 
 
 ## Features :sunglasses:

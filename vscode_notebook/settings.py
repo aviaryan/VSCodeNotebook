@@ -2,7 +2,7 @@ import json
 import os
 import time
 from subprocess import check_output, STDOUT
-from sublime_notebook import SETTINGS_PATH, VERSION
+from vscode_notebook import SETTINGS_PATH, VERSION
 from .message import print_err, print_info
 
 

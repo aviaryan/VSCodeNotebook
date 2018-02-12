@@ -1,7 +1,7 @@
 #!/Users/aviaryan/miniconda3/bin/python
 
-from sublime_notebook import sublime_notebook
+from vscode_notebook import vscode_notebook
 
 
 if __name__ == '__main__':
-	sublime_notebook.main()
+	vscode_notebook.main()
