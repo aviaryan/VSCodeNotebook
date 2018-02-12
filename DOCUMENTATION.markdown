@@ -51,9 +51,9 @@ Open VSCode and click on "Open Workspace" in the File menu.
 
 Browse for the `notebook.code-workspace` file in the folder you downloaded and open it. Now open the Explorer (View -> Explorer). You will see all your notes presented there with the hierarchy.
 
-Whenever you want to open your VSCode Notebook, you can use the switch project shortcut (Cmd-Ctrl-P or Ctrl-Alt-P) and select `notebook.sublime-project` to switch to the Notebook project.
+Whenever you want to open your VSCode Notebook, you can use the [Open Recent feature](https://code.visualstudio.com/docs/editor/multi-root-workspaces#_opening-workspace-files) (Ctrl-R) and select `notebook (workspace)` to switch to your VSCode notebook.
 
-![Project Selector](https://user-images.githubusercontent.com/4047597/35473121-4556dd7a-03a1-11e8-8c3a-6e85592d5d5f.png)
+![Open Recent](https://user-images.githubusercontent.com/4047597/36104189-4f75759e-1037-11e8-9528-ae6fb841a93d.png)
 
 PS - To open SublimeNotebook from commandline, see [this section](#subl-cli).
 
