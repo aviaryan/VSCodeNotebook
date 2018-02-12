@@ -1,8 +1,3 @@
-"""
-Sublime Notebook Manager
-v0.9
-"""
-
 import os
 from sys import exit
 from .cryptlib import get_file_list, encode, update_file, get_key, decode
