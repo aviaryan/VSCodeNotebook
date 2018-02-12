@@ -54,8 +54,6 @@ Whenever you want to open your VSCode Notebook, you can use the [Open Recent fea
 
 ![Open Recent](https://user-images.githubusercontent.com/4047597/36104189-4f75759e-1037-11e8-9528-ae6fb841a93d.png)
 
-PS - To open SublimeNotebook from commandline, see [this section](#subl-cli).
-
 
 <a name="en"></a>
 ## :four: Encrypting your notes
@@ -183,6 +181,3 @@ To change how frequently git backup happens, change the `git_push_interval_minut
 * Only *.txt and *.md files are detected as notes.
 
 * You don't need to be in decrypted state to create a new note. Even when in encrypted state, you can create a note. When `manager.py` starts decrypting the notes, this new file will be ignored and will be encrypted when it's time to encrypt. 
-
-<a name="subl-cli"></a>
-* **Open SublimeNotebook from commandline:** You can open a Sublime Text project from the command line with `subl --project path/to/your/project`, provided that you set up the `subl` command on your system ([see the official Sublime Text documentation](https://www.sublimetext.com/docs/3/osx_command_line.html)). You might want to set up an alias to open your notebook project. Also check out other command line options listed in the [unofficial documentation for Sublime Text](http://docs.sublimetext.info/en/latest/command_line/command_line.html).
