@@ -11,6 +11,10 @@
 			"group": {
 				"kind": "build",
 				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"focus": true
 			}
 		}
 	]
