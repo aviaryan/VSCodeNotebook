@@ -19,7 +19,7 @@
 
 The requirements for using this tool are as follows. Make sure to have them installed before proceeding to the next section.
 
-* Sublime Text
+* [Visual Studio Code](https://code.visualstudio.com/)
 * Python 3
 * [Optional] A cloud sync application setup (Dropbox, Google Drive, OneDrive etc)
 
@@ -28,7 +28,7 @@ The requirements for using this tool are as follows. Make sure to have them inst
 ## :two: Getting started
 :point_up_2: [[back to top](#docs)]
 
-The first step is downloading the release (`SublimeNotebook_vX.Y.zip`) from https://github.com/aviaryan/SublimeNotebook/releases/latest.
+The first step is downloading the release (`VSCodeNotebook_vX.Y.zip`) from https://github.com/aviaryan/VSCodeNotebook/releases/latest.
 
 Then you extract the zip file and put the contents in a cloud synced or local folder of your choice.
 
@@ -38,20 +38,20 @@ Notes can be `txt` or `md` files and they will be encrypted with your password.
 
 By default, only `diary` folder (if it exists) is encrypted. You can learn more about changing this setting [here](#custen).
 
-![Sublime Notebook: how it looks like](https://user-images.githubusercontent.com/4047597/35737506-c78a8d0a-0851-11e8-8d90-cd71117b08c7.png)
+![How a VSCode Notebook looks like](https://user-images.githubusercontent.com/4047597/36103351-24210400-1035-11e8-9a33-4eeed64473fe.png)
 
 
 <a name="ac"></a>
 ## :three: Accessing your notes
 :point_up_2: [[back to top](#docs)]
 
-To access your notes, we will use the Projects feature of Sublime Text.
+To access your notes, we will use the Workspace feature of VSCode.
 
-Open Sublime Text and click on "Open Project" in the Project menu.
+Open VSCode and click on "Open Workspace" in the File menu.
 
-Browse for the `notebook.sublime-project` file in the folder you downloaded and open it. Now open the Sidebar (View -> Side Bar). You will see all your notes presented there with the hierarchy.
+Browse for the `notebook.code-workspace` file in the folder you downloaded and open it. Now open the Explorer (View -> Explorer). You will see all your notes presented there with the hierarchy.
 
-Whenever you want to open your Sublime Notebook, you can use the switch project shortcut (Cmd-Ctrl-P or Ctrl-Alt-P) and select `notebook.sublime-project` to switch to the Notebook project.
+Whenever you want to open your VSCode Notebook, you can use the switch project shortcut (Cmd-Ctrl-P or Ctrl-Alt-P) and select `notebook.sublime-project` to switch to the Notebook project.
 
 ![Project Selector](https://user-images.githubusercontent.com/4047597/35473121-4556dd7a-03a1-11e8-8c3a-6e85592d5d5f.png)
 
