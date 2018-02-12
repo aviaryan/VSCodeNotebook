@@ -9,8 +9,7 @@
 :six: [Changing Notebook password](#cp)  
 :seven: [Customizing which folders are encrypted](#custen)  
 :eight: [Automatic git backups](#git)  
-:nine: [Setting up better Markdown highlighting in Sublime Text](#mdext)  
-:keycap_ten: [FAQ](#faq)  
+:nine: [FAQ](#faq)  
 
 
 <a name="rq"></a>
@@ -114,7 +113,7 @@ Then start `manager.py` again to re-encrypt your notes. This time you will be as
 ## :seven: Customizing which folders are encrypted
 :point_up_2: [[back to top](#docs)]
 
-To customize which folders are encrypted, use the `settings.json` file in `sublime_notebook/` directory.
+To customize which folders are encrypted, use the `settings.json` file in `vscode_notebook/` directory.
 
 1. "private_folders" are the one that are encrypted.
 2. "public_folders" are not encrypted.
@@ -144,7 +143,7 @@ unintentional side-effects. `"is_encrypted": false` will be present in `settings
 
 > This feature comes in handy for those who don't trust cloud data storage providers. You can even use this as a second backup for your data. I personally have auto git backups set up so that my notes are stored on both Dropbox and GitHub.
 
-To enable git backups, enable the feature from `sublime_notebook/settings.json`.
+To enable git backups, enable the feature from `vscode_notebook/settings.json`.
 
 ```json
 {
@@ -156,7 +155,7 @@ Once this setting is enabled, you will have to make your notebook a git reposito
 Start with an empty remote repository to avoid any conflicts.
 
 ```sh
-# pwd is the directory with manager.py and sublime_notebook/ folder.
+# pwd is the directory with manager.py and vscode_notebook/ folder.
 $ git init
 $ git remote add notebookbackup <GIT_REMOTE_URL>
 # ^ ssh git url preferred
@@ -164,7 +163,7 @@ $ git remote add notebookbackup <GIT_REMOTE_URL>
 
 The git backup will run when you re-encrypt after decrypting the notebook.
 
-![git backup](https://user-images.githubusercontent.com/4047597/35779595-e2e04022-09f5-11e8-8fb6-2e808b29cdb6.png)
+![git backup](https://user-images.githubusercontent.com/4047597/36108087-ec5be960-1041-11e8-9558-23b8e457134a.png)
 
 To change how frequently git backup happens, change the `git_push_interval_minutes` value in `settings.json`.
 
@@ -177,35 +176,8 @@ To change how frequently git backup happens, change the `git_push_interval_minut
 1440 minutes means 24 hours i.e. 1 day. Set it to `0` to enable instant backups.
 
 
-<a name="mdext"></a>
-## :nine: Setting up better Markdown highlighting in Sublime Text
-:point_up_2: [[back to top](#docs)]
-
-* Install the packages from here.
-
-	* [Sublime Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)
-	* [Sublime Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended) - companion to the first package.
-
-* Make Sublime Markdown Extended as default language for markdown.
-
-> Navigate through the following menus in Sublime Text: View -> Syntax -> Open all with current extension as... -> Markdown Extended
-
-* Make Sublime Monokai Extended default theme for Markdown extended. Open `Settings - Syntax Specific` from preferences and update the file as follows.
-
-```js
-{
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
-	"extensions":
-	[
-		"md"
-	]
-}
-```
-
-![sublime monkai](https://camo.githubusercontent.com/e5112e65510eada23f8cdc306ba46bfe1043f201/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3338333939342f3732363833332f30666465306431362d653133382d313165322d386533642d3864626663393132323465372e706e67)
-
 <a name="faq"></a>
-## :keycap_ten: FAQ
+## :nine: FAQ
 :point_up_2: [[back to top](#docs)]
 
 * Only *.txt and *.md files are detected as notes.
