@@ -66,7 +66,7 @@ I recommend changing the first line of the file to point to your interpreter.
 #!/Users/aviaryan/miniconda3/bin/python
 ```
 
-> You can also change the "command" in `.vscode/tasks.json`. You might need to change it to something like "python3 manager.py" if you are a Windows user.
+Or you can change the "command" in [.vscode/tasks.json](.vscode/tasks.json) which is responsible for running `manager.py`. You might need to change it to something like "python3 manager.py" if you are a Windows user.
 
 To run `manager.py`, you can use the shortcut Ctrl-Shift-B (Cmd-Shift-B on OSX) to show the console with `manager.py` running.
 
