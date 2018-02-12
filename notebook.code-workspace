@@ -16,6 +16,8 @@
 			// release settings
 			// uncommented in the release zip
 			// "vscode_notebook/*.py": true,
-		}
+		},
+		"search.useIgnoreFiles": false
+		// ^ can be removed in production
 	}
 }

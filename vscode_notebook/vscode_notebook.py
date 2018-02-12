@@ -26,7 +26,7 @@ def main():
 		print_info('Not encrypted, encrypting ....')
 		# create settings
 		print_info(
-			'Created settings.json in sublime_notebook/ directory.\n' +
+			'Created settings.json in vscode_notebook/ directory.\n' +
 			'By default, only the "diary" directory is privated (encrypted), you can change this setting by editing settings.json.\n' +
 			'See the docs for more info.'
 		)
@@ -38,7 +38,7 @@ def main():
 		# update encryption status
 		sts = Settings()
 		sts.change_encrypted_status(True)
-		print_info('Sublime Notebook setup complete')
+		print_info('VSCode Notebook setup complete')
 	else:
 		# get settings
 		sts = Settings()

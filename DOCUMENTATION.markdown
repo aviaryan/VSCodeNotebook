@@ -6,7 +6,7 @@
 :three: [Accessing your notes](#ac)  
 :four: [Encrypting your notes](#en)  
 :five: [Note taking features](#nt)  
-:six: [Changing SublimeNotebook password](#cp)  
+:six: [Changing Notebook password](#cp)  
 :seven: [Customizing which folders are encrypted](#custen)  
 :eight: [Automatic git backups](#git)  
 :nine: [Setting up better Markdown highlighting in Sublime Text](#mdext)  
@@ -69,28 +69,28 @@ I recommend changing the first line of the file to point to your interpreter.
 #!/Users/aviaryan/miniconda3/bin/python
 ```
 
-To run `manager.py`, you can use the shortcut Ctrl-B (Cmd-B on OSX) to launch a terminal window in the `manager.py`'s directory.
+> You can also change the "command" in `.vscode/tasks.json`. You might need to change it to something like "python3 manager.py" if you are a Windows user.
 
-Then use `python manager.py` or `./manager.py` to run the script.
+To run `manager.py`, you can use the shortcut Ctrl-Shift-B (Cmd-Shift-B on OSX) to show the console with `manager.py` running.
 
 When it runs for the first time, it will find the notes and ask you a password for encryption.
 After getting the password, it will encrypt all [non-public notes](#custen) using that password.
 
-![first time encryption](https://user-images.githubusercontent.com/4047597/35779481-b09abd92-09f3-11e8-8dee-accbf5a64581.png)
+![first time encryption](https://user-images.githubusercontent.com/4047597/36105242-1e228484-103a-11e8-8739-66e735e09825.png)
 
 In the subsequent runs, `manager.py` will work as an un-locker where it will ask password to decrypt the notes and then pause its execution.
 Now you can view and edit your notes and then later on encrypt them again by entering 'e' in the prompt.
 
-![second run](https://user-images.githubusercontent.com/4047597/35779488-dc1046cc-09f3-11e8-8773-ae66da8325c4.png)
+![second run](https://user-images.githubusercontent.com/4047597/36105306-48d096e4-103a-11e8-9b29-8e22f0b3dabc.png)
 
 
 <a name="nt"></a>
 ## :five: Note taking features
 :point_up_2: [[back to top](#docs)]
 
-* To search through all your notes, use the Sublime Text’s search in project feature (Ctrl-Shift-F or Cmd-Shift-F).
+* To search through all your notes, use the VSCode’s find all feature (Ctrl-Shift-F or Cmd-Shift-F).
 
-* You can use the Sublime Text sidebar to view your notes in a hierarchical fashion.
+* You can use the VSCode explorer to view your notes in a hierarchical fashion.
 
 * Store the folder in Dropbox, Google Drive or Box to have it on all your computers (as well as secure a backup).
 
@@ -98,14 +98,16 @@ Now you can view and edit your notes and then later on encrypt them again by ent
 
 
 <a name="cp"></a>
-## :six: Changing SublimeNotebook password
+## :six: Changing Notebook password
 :point_up_2: [[back to top](#docs)]
 
-To change password of your Sublime Notebook, decrypt your existing notes using old `manager.py`, then exit the script in decrypted state (using "d").
+To change password of your Notebook, decrypt your existing notes using old `manager.py` (Ctrl-Shift-B or Cmd-Shift-B), then exit the script in decrypted state (using "d").
 
 Then start `manager.py` again to re-encrypt your notes. This time you will be asked for a new password to encrypt your notes.
 
-![changing password](https://user-images.githubusercontent.com/4047597/35779512-310e70a4-09f4-11e8-9298-4243ae3fe04d.png)
+![leave decrypted](https://user-images.githubusercontent.com/4047597/36106585-ca9d1eba-103d-11e8-9228-e9d969453c46.png)
+
+![encrypt again](https://user-images.githubusercontent.com/4047597/36106587-cadfb9a0-103d-11e8-97ff-fefce2b8c672.png)
 
 
 <a name="custen"></a>
