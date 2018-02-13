@@ -7,6 +7,10 @@
 VSCode Notebook is an attempt to use VSCode as a complete note taking application. 
 This is a VSCode port of the popular [SublimeNotebook](https://github.com/aviaryan/SublimeNotebook) project.
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/4047597/36163471-86b2871c-110f-11e8-9030-d3788564a306.gif">
+</p>
+
 
 ## Why did you build this? :thinking:
 
