@@ -33,3 +33,12 @@ The result is this project, a wrapper/idea that converts my text editor, VSCode,
 ## Documentation :yum:
 
 Read [DOCUMENTATION.markdown](DOCUMENTATION.markdown).
+
+
+## Support the project :money_with_wings:
+
+Are you using this project regularly and find it adding value to your life?
+
+If yes, please consider supporting me by donating **$10**.
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/aviaryan/10)
