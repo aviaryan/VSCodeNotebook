@@ -98,7 +98,7 @@ Now you can view and edit your notes and then later on encrypt them again by ent
 ## :six: Changing Notebook password
 :point_up_2: [[back to top](#docs)]
 
-To change password of your Notebook, decrypt your existing notes using old `manager.py` (Ctrl-Shift-B or Cmd-Shift-B), then exit the script in decrypted state (using "d").
+To change password of your Notebook, decrypt your existing notes using `manager.py` (Ctrl-Shift-B or Cmd-Shift-B), then exit the script in decrypted state (using "d").
 
 Then start `manager.py` again to re-encrypt your notes. This time you will be asked for a new password to encrypt your notes.
 
