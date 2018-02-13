@@ -39,6 +39,6 @@ Read [DOCUMENTATION.markdown](DOCUMENTATION.markdown).
 
 Are you using this project regularly and find it adding value to your life?
 
-If yes, please consider supporting me by donating **$10**.
+If yes, please consider supporting the author by donating **$5**.
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/aviaryan/10)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/aviaryan/5)
