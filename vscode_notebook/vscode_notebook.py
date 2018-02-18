@@ -72,7 +72,10 @@ def main():
 				break
 		if ans == 'e':
 			# encrypt
-			update_file(encode, get_file_list(), key)
+			st = update_file(encode, get_file_list(), key)
+			if st:
+				print_err('Something went wrong while encrypting')
+				exit(3)
 			sts.change_encrypted_status(True)
 			print_info('Notes encrypted')
 			# do git push
