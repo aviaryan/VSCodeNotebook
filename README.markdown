@@ -2,7 +2,7 @@
 	VSCode Notebook :memo:
 </h1> 
 
-**v1.0**
+**v2.0**
 
 VSCode Notebook is an attempt to use VSCode as a complete note taking application. 
 This is a VSCode port of the popular [SublimeNotebook](https://github.com/aviaryan/SublimeNotebook) project.
@@ -28,7 +28,7 @@ The result is this project, a wrapper/idea that converts my text editor, VSCode,
 
 * Fast Search across all notes
 * Hierarchical organization and display of notes
-* Password based encryption for notes
+* Password based encryption for notes (thanks to [pyAES](https://github.com/ricmoo/pyaes))
 * Cloud sync (Dropbox, Google Drive, Box, etc)
 * Periodic git backup (to Github, Gitlab, your own private git server, etc)
 * Markdown based markup and code syntax highlighting

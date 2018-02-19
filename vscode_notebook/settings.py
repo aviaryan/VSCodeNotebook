@@ -1,6 +1,7 @@
 import json
 import os
 import time
+from traceback import print_exc
 from subprocess import check_output, STDOUT
 from vscode_notebook import SETTINGS_PATH, VERSION
 from .message import print_err, print_info
@@ -103,13 +104,28 @@ class Settings:
 			print_err('notebookbackup remote not found')
 			return False
 		# push to remote
-		print_info('Pushing to remote')
 		commit_msg = "auto backup " + str(mins)
-		out = check_output("git add -A && git commit -m \"{}\" && git push notebookbackup master".format(commit_msg), 
-			stderr=STDOUT, shell=True).decode()
-		print_info('GIT LOG:\n\n' + out)
+		# push only if changes
+		out = check_output("git status -s", stderr=STDOUT, shell=True).decode()
+		if not out:
+			print_info('No changes detected, hence skipping git backup')
+			return
+		# save last push min in advance
+		old_mins = self.json['last_git_push']
 		self.json['last_git_push'] = mins
 		self.save_settings()
+		# actual push
+		try:
+			print_info('Pushing to remote')
+			out = check_output("git add -A && git commit -m \"{}\" && git push notebookbackup master".format(commit_msg), 
+				stderr=STDOUT, shell=True).decode()
+			print_info('GIT LOG:\n\n' + out)
+		except Exception:
+			# revert back
+			print_exc()
+			print_err('git push did not happen')
+			self.json['last_git_push'] = old_mins
+			self.save_settings()
 
 	@staticmethod
 	def _find_in_array(item, arr):
