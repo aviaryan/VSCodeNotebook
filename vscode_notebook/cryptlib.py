@@ -5,7 +5,7 @@ import re
 from getpass import getpass
 from .settings import Settings
 from .message import print_err
-from .pyaes import aes, AESModeOfOperationCTR
+from .pyaes import AESModeOfOperationCTR
 
 
 EXTRA_STR = 'ENCo0D#DT{xTCh$cKe>'
