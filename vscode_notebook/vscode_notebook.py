@@ -18,7 +18,7 @@ def get_first_time_key():
 
 def main():
 	"""
-	Executes Sublime Notebook
+	Executes Notebook
 	"""
 	if not os.path.exists(SETTINGS_PATH):
 		# new case
@@ -42,7 +42,7 @@ def main():
 	else:
 		# get settings
 		sts = Settings()
-		# check SublimeNotebook settings version
+		# check Notebook settings version
 		check = sts.upgrade_settings()
 		if check:
 			print_info('settings.json upgraded to current version')
@@ -82,7 +82,7 @@ def main():
 			if sts.is_git_setup():
 				sts.do_git_push()
 		else:
-			# disable sublime notebook
+			# disable notebook
 			# exit as-is
 			print_info('Notes have been left decrypted')
 			pass
