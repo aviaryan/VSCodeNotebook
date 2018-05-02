@@ -7,7 +7,7 @@
 :four: [Encrypting your notes](#en)  
 :five: [Note taking features](#nt)  
 :six: [Changing Notebook password](#cp)  
-:seven: [Customizing which folders are encrypted](#custen)  
+:seven: [Customizing which folders and files are encrypted](#custen)  
 :eight: [Automatic git backups](#git)  
 :nine: [FAQ](#faq)  
 
@@ -33,7 +33,7 @@ Then you extract the zip file and put the contents in a cloud synced or local fo
 
 Done! You can now create any number of notes in that folder. For hierarchy, you can use folders and sub-folders.
 
-Notes can be `txt` or `md` files and they will be encrypted with your password.
+Notes [by default](#custen), can be `txt` or `md` files and they will be encrypted with your password.
 
 By default, only `diary` folder (if it exists) is encrypted. You can learn more about changing this setting [here](#custen).
 
@@ -108,7 +108,7 @@ Then start `manager.py` again to re-encrypt your notes. This time you will be as
 
 
 <a name="custen"></a>
-## :seven: Customizing which folders are encrypted
+## :seven: Customizing which folders and files are encrypted
 :point_up_2: [[back to top](#docs)]
 
 To customize which folders are encrypted, use the `settings.json` file in `vscode_notebook/` directory.
@@ -127,6 +127,20 @@ You can also use the "*" symbol to select all folders. For example, in the follo
     ],
     "public_folders": [
         "web_links"
+    ]
+}
+```
+
+----
+
+You can also change which files are to be considered as notes, and thus encrypted. For that, change the `note_extensions` setting.
+
+```json
+{
+    "note_extensions": [
+        "txt",
+        "md",
+        "rst"
     ]
 }
 ```

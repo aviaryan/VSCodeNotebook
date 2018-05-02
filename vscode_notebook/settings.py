@@ -18,7 +18,8 @@ class Settings:
 		'version': VERSION,
 		'do_git_backup': False,
 		'git_push_interval_minutes': 1440,
-		'last_git_push': 0
+		'last_git_push': 0,
+		'note_extensions': ['txt', 'md']
 	}
 	json = default_json.copy()
 	where_star = 'public'

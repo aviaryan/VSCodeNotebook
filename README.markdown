@@ -2,7 +2,7 @@
 	VSCode Notebook :memo:
 </h1> 
 
-**v2.0**
+**v2.1**
 
 VSCode Notebook is an attempt to use VSCode as a complete note taking application. 
 This is a VSCode port of the popular [SublimeNotebook](https://github.com/aviaryan/SublimeNotebook) project.
