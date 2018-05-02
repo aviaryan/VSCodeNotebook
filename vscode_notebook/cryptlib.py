@@ -85,6 +85,7 @@ def decode(key, enc):
 def get_file_list():
     listFiles = []
     sts = Settings()
+    exts = tuple(sts.json['note_extensions'])
     # loop through directory
     for dirpath, dnames, fnames in os.walk('./'):
         dirname = dirpath.replace('./', '', 1)
@@ -95,7 +96,7 @@ def get_file_list():
         if not sts.check_folder_private(dirname):
             continue
         for f in fnames:
-            if not (f.endswith('.txt') or f.endswith('.md')):
+            if not f.endswith(exts):
                 continue
             listFiles.append(os.path.join(dirpath, f))
     # print(listFiles)
