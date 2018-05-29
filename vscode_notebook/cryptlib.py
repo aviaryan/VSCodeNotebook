@@ -106,10 +106,10 @@ def get_file_list():
 def update_file(funcptr, flist, key):
     failed = False
     for file in flist:
-        fptr = open(file, 'r')
+        fptr = open(file, 'r', encoding='utf8')
         data = fptr.read()
         fptr.close()
-        fptr = open(file, 'w')
+        fptr = open(file, 'w', encoding='utf8')
         try:
             newData = funcptr(key, data)
         except Exception:
