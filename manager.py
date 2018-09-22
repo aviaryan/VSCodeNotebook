@@ -1,4 +1,4 @@
-#!/Users/aviaryan/miniconda3/bin/python
+#!/usr/bin/env python3
 
 from vscode_notebook import vscode_notebook
 
